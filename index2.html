@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+
+    </h1>
+    <img src="" alt="">
+    <script>
+        var x1=sessionStorage.getItem("h");
+        var x2=JSON.parse(x1);
+        var d=document.getElementsByTagName("h1");
+        d[0].innerText=x2.title;
+        var img=document.getElementsByTagName("img");
+        img[0].setAttribute("src",x2.image);
+        img[0].style.width="200px";
+    </script>
+</body>
+</html>
